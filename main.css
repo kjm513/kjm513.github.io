@@ -1,0 +1,215 @@
+body {
+    display:grid;
+    grid-template-areas: 
+    "head head head head"
+    "aside nav nav nav"
+    "aside main main main"
+    "aside main main main"
+    "aside foot foot foot";
+    grid-template-columns: 250px auto auto auto;
+    grid-template-rows: 100px auto auto auto;
+    margin:0px;
+}
+
+
+header {
+    grid-area: head;
+    background: linear-gradient(to right, lightgray 30%, black);
+    padding-left: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background: black;
+}
+
+footer {
+    grid-area: foot;
+    background: black;
+    color: white;
+    justify-content: end;
+}
+
+aside {
+    grid-area: aside;
+    background: linear-gradient(to bottom, lightgray 30%, black);
+    text-align: center;
+    border: 3px solid black;
+    padding-right:10px;
+    
+    
+}
+main {
+    grid-area: main;
+    background: lightgray;
+}
+
+main h2 {
+    padding-left: 10px;
+}
+
+main h3 {
+    padding-left: 10px;
+}
+
+#whatissrc p {
+    padding-left: 10px;
+}
+
+#whatissrc p span {
+    background-color:yellow;
+}
+
+#whatissrc p a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#whatissrc p a:hover{
+    text-decoration: underline;
+}
+
+#whatissrc p a:active{
+    color:purple;
+}
+
+#whatissrc p a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 17px;
+    background-color: black;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav ul li a:active {
+    background: radial-gradient(lightgray, white);
+    color: black;
+}
+
+aside ul{
+    padding-right:10px;
+
+}
+
+aside ul li {
+    text-align: left;
+}
+
+#populargames table, th, td {
+    border: 1px solid black;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#gettingstarted p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#offweb h3 {
+    padding-left: 10px;
+}
+
+#tutorials{
+    padding-right:10px;
+}
+
+#gettingstarted a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#gettingstarted a:hover{
+    text-decoration:underline;
+}
+#gettingstarted a:active{
+    color:purple;
+}
+
+#gettingstarted a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+
+#tutorials ul li a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#tutorials ul li a:hover{
+    text-decoration: underline;
+}
+
+#tutorials ul li a:active{
+    color:purple;
+}
+
+#tutorials ul li a:visited{
+    color:purple;
+}
+
+#offweb a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#offweb a:hover{
+    text-decoration:underline;
+}
+#offweb a:active{
+    color:purple;
+}
+
+#offweb a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+
+#releasedprj h4{ 
+    padding-left:10px;
+}
+
+#releasedprj p{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#unreleased h4{
+    padding-left:10px;
+}
+
+#releasedprj p span {
+    font-style: italic;
+}
+
+#unreleased p{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+aside button:hover {
+    cursor:pointer
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link id="csslink" href="main.css" rel="stylesheet">
+        <link id="csslink" href="alternate.css" rel="alternate">
+        <link rel="icon" href="hammerlogo.png">
+        <title>Source Engine Mapping Starter Guide: My Projects</title>
+
+        <script>
+            function toggleCSS() {
+              // Obtains the <link> element that links to the css (by using its id).
+              var currentCSS = document.getElementById('csslink');
+    
+              // Change the value of href attribute to change the css file.
+              if (currentCSS.getAttribute('href') == 'main.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+              } else {
+                currentCSS.setAttribute('href', 'main.css');
+              }
+          }
+      </script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Source Engine Mapping</h1>
+        </header>
+
+        <nav>
+            <ul id="navbar">
+                <li id="navitem"><a href="index.html">Home</a></li>
+                <li id="navitem"><a href="myproject.html">My Projects</a></li>
+                <li id="navitem"><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Sections</h2>
+            <ul>
+                <li>Released Projects</li>
+                <li>Unreleased Projects / (WIP)</li>
+            </ul>
+            <h2>Switch styles</h2>
+            <button onclick="toggleCSS()">Switch Style</button>
+        </aside>
+
+        <main>
+            <div id="releasedprj">
+                <div id="firstmap">
+                    <h2>Released Projects</h2>
+                    <p>*<span>Note I would link them but I don't want to out myself like that. If you want to try them out just message me on canvas. Also click on the images to make them bigger and use the back arrow to return to the page.</span></p>
+                    <h3>My first Counter-Strike map</h3>
+                    <h4>Description / personal critique</h4>
+                    <p>My first ever attempt at making a map for Counter-Strike, it takes place in a underground pyramid like structure. In my honest opinion it's visually pleasing but plays terribly. The map suffers from weird sightlines and deep corners which discourages map rotation and the overall flow of the map is weird to play since most routes have 3 different ways of being flanked.</p>
+                    <h4>Screenshots</h4>
+                    <p id="sandpics"><a href="khufu_sand_xy.JPG" target="_self"><img src="khufu_sand_xy.JPG" alt="Top down grid layout of the entire map" height="150" width="300"></a><a href="Khufu_sand_beta_pic_3.JPG" target="_self"><img src="Khufu_sand_beta_pic_3.JPG" alt="Pre-textured map with orange dev textured walls and gray floors" height="150" width="300"></a><a href="Khufu_sand_beta_pic_6.JPG" target="_self"><img src="khufu_sand_beta_pic_6.JPG" alt="textured version of the same hallway but before lighting was implemented" height="150" width="300"></a><a href="sandreal.PNG" target="_self"><img src="sandreal.PNG" alt="finalized version of the same hallway" height="150" width="300"></a></p>
+                </div>
+
+                <div id="secondmap">
+                    <h3>My Second second Counter-strike map</h3>
+                    <h4>Description / personal critique</h4>
+                    <p>My second map for Counter-Strike takes place in a underground subway and offers some verticality to the gameplay. I think came out a little better in terms of gameplay since the routes to take are a bit more structured and thought out but visually it could use some work. I made this map when I was 18yrs old and at that time I had no real experience on how scaling worked so some things appear larger than they should along with me not being able to find a good reference for a subway station.</p>
+                    <h4>Screenshots</h4>
+                    <p id="subwaypics"><a href="subway10.PNG" target="_self"><img src="subway10.PNG" alt="One of the subway platforms" height="150" width="300"></a><a href="subway15.PNG" target="_self"><img src="subway15.PNG" alt="starting area for one of the teams and is also the entrance to the subway platforms" height="150" width="300"></a><a href="subway3.PNG" target="_self"><img src="subway3.PNG" alt="part of the map in the subway station that is being remodeled" height="150" width="300"></a><a href="subway7.PNG" target="_self"><img src="subway7.PNG" alt="Another angle of a subway station that is being remodeled" height="150" width="300"></a></p>
+                </div>
+            </div>
+
+            <div id="unreleased">
+                <h2>Unreleased Project / (WIP)</h2>
+                <h3>Work in-progress Left 4 dead 2 campaign</h3>
+                <h4>Description / personal critique</h4>
+                <p>This is my first big project, I am trying to create an entire "campaign"(four or five missions) for Left 4 Dead 2. I started this back in 2020 with development started to become on and off around summer/fall of 2021 due to increased demand from school and work. It starts off on a traffic jammed highway that forces you to navigate through a patch of forest till you reach a back road. From there you find a gas station and move to the next level. The next level you follow the back road till you find a sewer drain that leads into a city and the rest is work in-progress. From the screenshots below it's pretty obvious how early in development this really is but I would say that I'm pretty proud with how far it has come. Hopefully I'll finish it after I graduate.</p>
+                <h4>Screenshots</h4>
+                <p id="l4dpics"><a href="l4d2bridge.png" target="_self"><img src="l4d2bridge.png" alt="Bridge at night with a highway exit sign on it" height="150" width="300"></a><a href="l4d2gas.png" target="_self"><img src="l4d2gas.png" alt="Gas station sign at night with a puddle relection in front of it" height="150" width="300"></a><a href="l4d2sewer.png" target="_self"><img src="l4d2sewer.png" alt="Sewer runnoff in front of a murky pond" height="150" width="300"></a><a href="l4d2city.png" target="_self"><img src="l4d2city.png" alt="A wet city with a alleyway fire burning and a puddle reflecting the light" height="150" width="300"></a></p>
+
+                
+            </div>
+
+        </main>
+        <footer>Copyright &copy; Kyle Miller 2023</footer>
+    </body>
+</html>

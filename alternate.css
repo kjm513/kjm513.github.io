@@ -1,0 +1,160 @@
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    list-style: none;
+  }
+  
+
+main {
+    padding: 20px;
+}
+  
+
+aside {
+    width: 200px;
+    margin-right: 20px;
+}
+  
+
+header, footer {
+    background-color: #eee;
+    padding: 10px;
+}
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+
+main a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    display:block;
+}
+
+nav ul{
+    list-style:none;
+}
+  
+nav a:active {
+    font-weight: bold;
+}
+nav a:hover{
+    color:violet;
+}
+ 
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+      
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+      
+th {
+    background-color: #f2f2f2;
+}
+      
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+      
+tr:hover {
+    background-color: #ddd;
+}
+
+aside{
+    padding-left:20px;
+}
+aside button:hover {
+    cursor:pointer
+}
+
+#releasedprj p span {
+    font-style: italic;
+}
+#gettingstarted a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#gettingstarted a:hover{
+    text-decoration:underline;
+}
+#gettingstarted a:active{
+    color:purple;
+}
+
+#gettingstarted a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+
+#tutorials ul li a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#tutorials ul li a:hover{
+    text-decoration: underline;
+}
+
+#tutorials ul li a:active{
+    color:purple;
+}
+
+#tutorials ul li a:visited{
+    color:purple;
+}
+
+#offweb a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#offweb a:hover{
+    text-decoration:underline;
+}
+#offweb a:active{
+    color:purple;
+}
+
+#offweb a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+#whatissrc p a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+#whatissrc p a:hover{
+    text-decoration: underline;
+}
+
+#whatissrc p a:active{
+    color:purple;
+}
+
+#whatissrc p a:visited{
+    color:purple;
+    text-decoration: underline;
+}

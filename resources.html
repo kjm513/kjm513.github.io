@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link id="csslink" href="main.css" rel="stylesheet">
+        <link id="csslink" href="alternate.css" rel="alternate">
+        <link rel="icon" href="hammerlogo.png">
+        <title>Source Engine Mapping Starter Guide: Resources</title>
+
+        <script>
+            function toggleCSS() {
+              // Obtains the <link> element that links to the css (by using its id).
+              var currentCSS = document.getElementById('csslink');
+    
+              // Change the value of href attribute to change the css file.
+              if (currentCSS.getAttribute('href') == 'main.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+              } else {
+                currentCSS.setAttribute('href', 'main.css');
+              }
+          }
+      </script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Source Engine Mapping</h1>
+        </header>
+
+        <nav>
+            <ul id="navbar">
+                <li id="navitem"><a href="index.html">Home</a></li>
+                <li id="navitem"><a href="myproject.html">My Projects</a></li>
+                <li id="navitem"><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Sections</h2>
+            <ul>
+                <li>Helpful Youtube Channels</li>
+                <li>Official Documentation
+                    <ul>
+                        <li>Generic World Editing</li>
+                        <li>Counter-Strike: GO</li>
+                        <li>Portal 2</li>
+                        <li>Left 4 Dead 2</li>
+                        <li>Team Fortress 2</li>
+                        <li>Portal</li>
+                        <li>Half-life 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Switch styles</h2>
+            <button onclick="toggleCSS()">Switch Style</button>
+        </aside>
+
+        <main>
+            <div id="tutorials">
+                <h2>Helpful Youtube Channels</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/@3kliksphilip" target="_blank">3kliksphilip:</a> He has a tutorial for just about every aspect of the source engine but tends to focus more on Counter-strike. He has a playlist that contains everything that you could possibly want to know how to do in the source engine <a href="https://www.youtube.com/playlist?list=PLfwtcDG7LpxF7-uH_P9La76dgCMC_lfk3" target="_blank">here.</a></li>
+                    <li><a href="https://www.youtube.com/@WorldofLevelDesign" target="_blank">WorldofLevelDesign:</a> He has tutorials for mainly Left 4 Dead 1 and 2 along with some general workflow tutorials regarding importing assets and making complex geometry. He has a playlist with all of his source engine tutorials <a href="https://www.youtube.com/playlist?list=PL0C03A31AF4ABF42F" target="_blank">here.</a> With an extensive playlist for CSGO <a href="https://www.youtube.com/playlist?list=PL_c7yiTIRI8pv2Z1yqoLyLU7k2j-bM435" target="_blank">here.</a></li>
+                    <li><a href="https://www.youtube.com/@MrFunreal" target="_blank">MrFunreal:</a> He has tutorials for creating custom assets, custom textures, animations, etc. The playlist for his tutorials are <a href="https://www.youtube.com/playlist?list=PL-B7fIDBvXBDyEnlezBSqWvcR-0UhU2HO" target="_blank">here.</a></li>
+                    <li><a href="https://www.youtube.com/@TopHATTwaffle" target="blank">TopHATTwaffle:</a> He offers multiple different playlist that range from general world editor tutorials to game specific tutorials. His General Hammer Editor tutorials is <a href="https://www.youtube.com/watch?v=jF3er5lsaeg&list=PL-454Fe3dQH1L38FnKkz_O1CqYx6sKaXk" target="_blank">here.</a> His CSGO tutorials are <a href="https://www.youtube.com/playlist?list=PL-454Fe3dQH0WCzAsmydsr24NFaFrNC_h" target="_blank">here.</a></li>
+                </ul>
+            </div>
+
+            <div id="offweb">
+                <h2>Offical Documentation</h2>
+                <h3><a href="https://developer.valvesoftware.com/wiki/SDK_Docs" target="_blank">Overview for all the tools within the Source Development Kit or SDK</a></h3>
+                
+                <h3><a href="https://developer.valvesoftware.com/wiki/Category:Hammer" target="_blank">General world editing documentation</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Level_Creation" target="_blank">Counter-Strike: Global Offensive</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/Category:Portal_2_Level_Design" target="_blank">Portal 2</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/L4D2_Level_Design" target="_blank">Left 4 dead 2</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/Team_Fortress_2_Level_Creation" target="_blank">Team fortress 2</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/Portal_Level_Creation" target="_blank">Portal</a></h3>
+
+                <h3><a href="https://developer.valvesoftware.com/wiki/Half-Life_2_Level_Creation" target="_blank">Half-life 2</a></h3>
+            </div>
+
+        </main>
+        <footer>Copyright &copy; Kyle Miller 2023</footer>
+    </body>
+</html>

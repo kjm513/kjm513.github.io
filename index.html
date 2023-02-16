@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link id="csslink" href="main.css" rel="stylesheet">
+        <link id="csslink" href="alternate.css" rel="alternate">
+        <link rel="icon" href="hammerlogo.png">
+        <title>Source Engine Mapping Starter Guide: Home</title>
+
+        <script>
+            function toggleCSS() {
+              // Obtains the <link> element that links to the css (by using its id).
+              var currentCSS = document.getElementById('csslink');
+    
+              // Change the value of href attribute to change the css file.
+              if (currentCSS.getAttribute('href') == 'main.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+              } else {
+                currentCSS.setAttribute('href', 'main.css');
+              }
+          }
+      </script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Source Engine Mapping Starter Guide</h1>
+        </header>
+
+        <nav>
+            <ul id="navbar">
+                <li id="navitem"><a href="index.html">Home</a></li>
+                <li id="navitem"><a href="myproject.html">My Projects</a></li>
+                <li id="navitem"><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Sections</h2>
+            <ul>
+                <li>What is the Source Engine</li>
+                <li>Popular Games</li>
+                <li>How to get started</li>
+            </ul>
+            <h2>Switch styles</h2>
+            <button onclick="toggleCSS()">Switch Style</button>
+        </aside>
+
+        <main>
+            <div id="whatissrc">
+                <h2>What is the Source Engine?</h2>
+                <p>The <a href="https://developer.valvesoftware.com/wiki/Source" target="_blank">Source</a> Engine is a 3D game engine created by Valve in 2004, it is the successor to GoldSrc. Source has been used by Valve, third-party companies, and (much like GoldSource) countless community mods by people around the globe. The Source is very flexible and powers a lot of popular games such as the ones in the table below.</p>
+                <h3>Terms and definitions</h3>
+                <p><span>Source</span> - The game engine that we will be talking about.</p>
+                <p><span>SDK</span> - Stands for Source development kit and is the bundle/tool to make maps and mods for the source engine.</p>
+                <p><span>Authoring tool</span> - In this instance is the same thing as SDK just a different name.</p>
+                <p><span>Valve</span> - The company who owns the steam platform as well as the creators of the source engine.</p>
+                <p><span>Hammer Editor</span> - This is the main tool for creating maps for games in the source engine this is also reffered to as a world editor.</p>
+            </div>
+
+            <div id="Populargames">
+                <h2>Popular Games</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Year Released</th>
+                        <th>Version of Source</th>
+                        <th>Cover art</th>
+                    </tr>
+                    <tr>
+                        <td>Apex Legends</td>
+                        <td>2019</td>
+                        <td>Heavily modified version of sdk 2013</td>
+                        <td><a href="apexcover.jpg" target="_self"><img src="apexcover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Titanfall 2</td>
+                        <td>2016</td>
+                        <td>Heavily Modified version of sdk 2013</td>
+                        <td><a href="Titanfall2cover.jpg" target="_self"><img src="Titanfall2cover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Counter-Strike: Global Offensive</td>
+                        <td>2012</td>
+                        <td>CSGO engine branch</td>
+                        <td><a href="csgocover.jpg" target="_self"><img src="csgocover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Portal 2</td>
+                        <td>2011</td>
+                        <td>Portal 2 engine branch</td>
+                        <td><a href="Portal2cover.jpg" target="_self"><img src="Portal2cover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Left 4 Dead 2</td>
+                        <td>2009</td>
+                        <td>L4D engine branch</td>
+                        <td><a href="Left4Dead2cover.jpg" target="_self"><img src="Left4Dead2cover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Team Fortress 2</td>
+                        <td>2007</td>
+                        <td>Curently uses Source 2013 Multiplayer branch</td>
+                        <td><a href="tf2cover.jpg" target="_self"><img src="tf2cover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Portal</td>
+                        <td>2007</td>
+                        <td>Curently uses Source 2013 singleplayer branch</td>
+                        <td><a href="portalcover.jpg" target="_self"><img src="portalcover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Half-life 2</td>
+                        <td>2004</td>
+                        <td>Curently uses Source 2013 singleplayer branch</td>
+                        <td><a href="Half-Life_2_cover.jpg" target="_self"><img src="Half-Life_2_cover.jpg" alt="Cover art for the game apex legends" height="100" width="100"></a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="gettingstarted">
+                <h2>How to get started</h2>
+                <p>First you are going to want to install steam, which can be found <a href="https://store.steampowered.com/about/" target="_blank">here.</a></p>
+                <p>Next you are going to want to decide what game you want to make maps for since in order to have access to the SDK you are going to need to download the game and or buy the game. Some games like Team Fortress 2 and Counter-Strike are free but other games such as Left 4 Dead 2 and Half-life 2 cost money.</p>
+                <p>Once you have decided what game you want to make maps for and downloaded it, you are going to want to navigate to your library on steam, then at the top left there is a drop-down that says games. You are going to click the drop-down and select tools. From there you should see a list of steams sdk's and dedicated server applications. Find the name of the game you want to make maps for (EX: Left 4 Dead 2 Authoring tools or Counter-strike: Global Offensive SDK) From there select the tool that matches the game you want and click install.</p>
+                <p>Congratulations you have installed your first SDK. Once the installation is complete click the green button that says play. This will launch the authoring tools/SDK.</p>
+                <p>From here you are going to want to select the hammer editor in the menu. This is what you will be mainly using to make the actual map itself, the SDK provides textures from the game that you installed with your SDK along with models, animations, sounds and game logic. In the resources tab on this website I have linked the official documentation for a few of SDK's along with a few Youtubers and their respective tutorials on creating your first map.</p>
+                <p>Good luck and have fun!</p>
+            </div>
+        </main>
+        <footer>Copyright &copy; Kyle Miller 2023</footer>
+    </body>
+</html>
